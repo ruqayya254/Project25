@@ -32,6 +32,7 @@ function setup() {
 		}
 	});
 	Engine.run(engine);
+	Render.run(render)
 	
       
 
@@ -41,7 +42,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(255);
   
   paperObject.display();
   Dustbin1.display();
@@ -51,7 +52,7 @@ function draw() {
 
 function keyPressed(){
   if(keyCode===UP_ARROW)
-  Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145})
+  Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:140,y:-155})
 
 }
 
